@@ -1,7 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    color: #363636;
 }
+
+
+/* Header ==========================*/
+
+
 .header {
     display: flex;
     align-items: center;
@@ -42,6 +52,7 @@ body {
 }
 .button-group {
     height: 100%;
+    display: flex;
 }
 .button {
     height: 100%;
@@ -66,4 +77,172 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 
+}
+/* Film =================*/
+
+.container {
+    max-width: 1130px;
+    margin: auto;
+}
+.film {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D4D4D4;
+}
+.film-wrapper {
+    display: flex;
+}
+.film-trailer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+.poster {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 358px;
+}
+.trailer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #D4D4D4;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+.trailer-button-icon {
+    margin-right: 14px;
+}
+.film-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.film-subtitle {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+}
+.film-description {
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 514px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.about-film {
+    display: flex;
+    margin-bottom: 50px;
+}
+.about-text {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+}
+.about-text-bold {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    font-weight: bold;
+
+}
+.left-side {
+    margin-right: 40px;
+}
+.rating {
+    display: flex;
+    align-items: center;
+}
+.rating-counter {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #5671F6;
+    border-radius: 10px;
+    margin-right: 28px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #5671F6;
+}
+.rating-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.rating-text {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.rating-text-bold {
+    font-weight: bold;
+}
+
+
+/* Cast ===============*/
+
+.cast {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.section-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #A5A5A5;
+    margin-right: 30px;
+}
+.section-title.active {
+    color: #363636;
+    font-weight: 900;
+}
+.tabs-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    margin-bottom: 35px;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.name {
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.en-name {
+    color: #A5A5A5;
 }
