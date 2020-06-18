@@ -80,6 +80,26 @@ body {
     padding-right: 50px;
 
 }
+.mobile-buttons {
+    display: none;
+}
+.m-menu-button, .search-button{
+    padding: 5px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.menu-line {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: black;
+    flex-basis: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 40px;
+}
+
 /* Film =================*/
 
 .container {
@@ -248,3 +268,208 @@ body {
 .en-name {
     color: #A5A5A5;
 }
+.news {
+    background: #F3F3F3;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.section-news-title {
+    font-weight: 900;
+    color: black;
+    margin-bottom: 65px;
+}
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.news-card {
+    flex-basis: 23%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+}
+.news-date {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}
+.news-title {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 14px;
+}
+
+/*=============АДАПТИВНОСТЬ===================*/
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .card-image {
+        width: 70px;
+        height: 70px;
+    }
+    .header {
+        height: 90px;
+        padding-left: 20px;
+    }
+    .sign-up {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navigation {
+        margin-right: 20px;
+    }
+    .search-input {
+        margin-left: 20px;
+    }
+    .navigation-link {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .line {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 760px;
+    }
+    .navigation {
+        display: none;
+    }
+    .search-input {
+        margin-right: auto;
+    }
+    .film-title {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .film-subtitle {
+        margin-bottom: 20px;
+    }
+    .film-description {
+        margin-bottom: 30px;
+    }
+    .about-film {
+        margin-bottom: 30px;
+    }
+    .about-text-bold {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .card-image {
+        width: 100px;
+        height: 100px;
+    }
+    .card {
+        flex-basis: 50%;
+    }
+    .news-card {
+        flex-basis: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        height: 80px;
+    }
+    .film {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .film-wrapper {
+        flex-wrap: wrap;
+    }
+    .film-text {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    .cast {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .news {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .mobile-buttons {
+        display: block;
+    }
+    .button-group {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+    .search-input {
+        display: none;
+    }
+    .header {
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    .film-title {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 12px;
+    }
+    .film-subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 26px;
+    }
+    .film-description {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+    .about-film {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .about-text-bold {
+        display: inline-block;
+    }
+    .film-trailer, .poster {
+        width: 100%;
+    }
+    .film-trailer {
+        margin-bottom: 30px;
+    }
+    .film-text {
+        order: 1;
+        margin-bottom: 0px;
+    }
+    .card {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .card-image {
+        width: 60px;
+        height: 60px;
+    }
+    .tabs {
+        margin-bottom: 35px;
+    }
+    .cast {
+        padding-bottom: 50px;
+    }
+    .news-card {
+        flex-basis: 100%;
+    }
+
+}
+
