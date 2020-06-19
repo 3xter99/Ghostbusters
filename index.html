@@ -8,29 +8,34 @@
     <title>Охотники за привидениями:  Наследники</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header class="header">
     <a href="/" class="header-logo">
         <img width="68" src="img/logo.png" alt="Logo: Film" class="logo">
     </a>
-    <div class="line"></div>
-    <input type="search"
-           class="search-input"
-           placeholder="Поиск по фильмам...">
-    <nav class="navigation">
-        <a href="#" class="navigation-link">Фильмы</a>
-        <a href="#" class="navigation-link">ТВ</a>
-        <a href="#" class="navigation-link">Новости</a>
-        <a href="#" class="navigation-link">О Сервисе</a>
-    </nav>
+    <div class="m-menu">
+        <div class="line"></div>
+        <input type="search"
+               class="search-input"
+               placeholder="Поиск по фильмам...">
+        <nav class="navigation">
+            <a href="#" class="navigation-link">Фильмы</a>
+            <a href="#" class="navigation-link">ТВ</a>
+            <a href="#" class="navigation-link">Новости</a>
+            <a href="#" class="navigation-link">О Сервисе</a>
+        </nav>
         <div class="button-group">
             <button class="button sign-up">Регистрация</button>
             <button class="button login">Войти</button>
         </div>
+    </div>
+
     <div class="mobile-buttons">
-        <button class="search-buttonK">
+        <button class="search-button">
             <img src="img/search-icon.svg" alt="search">
         </button>
         <button class="m-menu-button">
@@ -47,10 +52,10 @@
             <div class="film-wrapper">
                 <div class="film-trailer">
                     <img src="img/poster.jpg" alt="Poster" class="poster">
-                    <button class="trailer-button">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=QD6jYuZtBL0" class="trailer-button">
                         <img src="img/play.svg" alt="Play" class="trailer-button-icon">
                         <span class="trailer-button-text">Посмотреть трейлер</span>
-                    </button>
+                    </a>
                 </div>
                 <!-- /.film-trailer -->
                 <div class="film-text">
@@ -216,6 +221,8 @@
             </div>
         </div>
     </section>
-
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
