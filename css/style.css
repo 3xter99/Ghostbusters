@@ -251,9 +251,17 @@ body {
     font-weight: 900;
 }
 .tabs-content {
-    display: flex;
+    display: none;
     align-items: center;
     flex-wrap: wrap;
+    visibility: hidden;
+}
+.tabs-content.visible {
+    display: flex;
+    visibility: visible;
+}
+.tab {
+    cursor: pointer;
 }
 .card {
     display: flex;
@@ -312,8 +320,22 @@ body {
     color: #000000;
     margin-top: 14px;
 }
-
+.button-next {
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    cursor: pointer;
+}
 /*=============АДАПТИВНОСТЬ===================*/
+
+
+
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -459,6 +481,13 @@ body {
         padding-top: 50px;
         padding-bottom: 70px;
     }
+    .news-card {
+        max-width: 90%;
+    }
+    .button-next {
+        display: block;
+    }
+
     .mobile-buttons {
         display: block;
         margin-left: auto;
